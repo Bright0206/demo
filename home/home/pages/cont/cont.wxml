@@ -1,0 +1,187 @@
+<view class="container">
+  <view class='header'>
+    <view class='top'>
+      <canvas class="cir" style="width:200px; height:200px;" canvas-id="canvasArc"></canvas> 
+      <view class='canvas_tle'>
+        <text class='canvasmun'>{{canvasmun}}</text>
+        <text class='canp'>睡眠评分</text>
+      </view>
+    </view>
+    <view class='top_menu'>
+      <view class='topmenu'>
+        <view class='top_time'><text class='size1'>{{top1_1}}</text>h<text class='size1'>{{top1_2}}</text>min</view>
+        <text class='top_title'>浅度睡眠</text>
+      </view>
+      <view class='topmenu'>
+        <view class='top_time'>{{top2}}次</view>
+        <text class='top_title'>翻身次数</text>
+      </view>
+      <view class='topmenu'>
+        <view class='top_time'><text class='size1'>{{top3_1}}</text>h<text class='size1'>{{top3_1}}</text>min</view>
+        <text class='top_title'>睡眠时长</text>
+      </view>
+    </view>
+  </view>
+  <view class='section cont_1'>
+    <text class='conttip conttip_on'>睡眠时间不足</text>
+    <text class='conttip conttip_def'>深度睡眠时间不足</text>
+    <text class='conttip conttip_on'>入睡过晚</text>
+    <text class='conttip conttip_on'>心率不齐</text>
+    <text class='conttip conttip_def'>呼吸异常</text>
+  </view>
+  <view class='section contont'>
+    <view class='hd_title'>
+      <view class='hstitle'>
+          <view class='r_l'>
+            <image src="/image/icon_moon.png" class='hd_img' style='height:20px'></image>
+            <text class='title_1'>深浅睡</text>
+          </view>
+          <view class='r_r'>
+            <image src="/image/off_bed.png" class='hd_img' style='height:20px'></image>
+           <text class='title_2'>离枕</text>
+          </view>
+      </view>
+    </view>
+    <view class='hd_content'>
+      <view class='sleepCont'>
+        <view class='sleep' >
+          <block view  wx:for="{{sleepitem}}" wx:key="key" class='bgs'>
+            <view wx:if="{{item.type  == 1 }}" class='bgs' style="width:{{item.time}}px">
+                <view class='bg1'></view>
+            </view>
+            <view wx:elif="{{item.type  ==2}}" class='bgs' style="width:{{item.time}}px">
+                <view class='bg2'></view>
+            </view>
+            <view wx:elif="{{item.type  ==3}}" class=' bgs' style="width:{{item.time}}px">
+              <view class='bg3'></view>
+            </view>
+            <view wx:elif="{{item.type  ==4}}" class=' bgs' style="width:{{item.time}}px">
+              <view class='bg4'></view>
+            </view>
+            <view wx:else class='bgs' style="width:1px">
+              <view class='bg5'></view>
+              <image src="/image/off_bed.png" class='splimg'></image>
+            </view>
+          </block>
+        </view>
+        <view class='times'>
+          <view class='timeMenu' style="left:-10px;">
+            <image src='/image/moon.png' class='timeimg r_l'></image>
+            <text class="r_l">23.23</text>
+          </view>
+          <view class='timeMenu'  style="left:30%;">
+            <text>23.23</text>
+          </view>
+          <view class='timeMenu'  style="left:55%;">
+            <text>23.23</text>
+          </view>
+          <view class='timeMenu' style="right:-5px;padding:0">
+            <text class="r_l">23.23</text>
+            <image src='/image/sun.png' class='timeimg'></image>
+            
+          </view>
+        </view>
+        <view class='sleep_cont'>
+          <view class='sleepMenu'>
+            <view class='sleep_canvas'>
+              <canvas class="cir" style="width:60px; height:60px;" canvas-id="canvasArc1"></canvas> 
+              <text class='canmun1'>{{sleep1}}%</text>
+            </view>
+            <view class='topmenus'>
+              <view class='top_times'><text class='size1'>{{slp1_1}}</text>h<text class='size1'>{{slp1_2}}</text>min</view>
+              <text class='top_title'>深睡</text>
+            </view>
+          </view>
+          <view class='sleepMenu'>
+            <view class='sleep_canvas'>
+              <canvas class="cir" style="width:60px; height:60px;" canvas-id="canvasArc2"></canvas> 
+              <text class='canmun2'>{{sleep2}}%</text>
+            </view>
+            <view class='topmenus'>
+              <view class='top_times'><text class='size1'>{{slp1_1}}</text>h<text class='size1'>{{slp1_2}}</text>min</view>
+              <text class='top_title'>浅睡</text>
+            </view>
+          </view>
+          <view class='sleepMenu'>
+            <view class='sleep_canvas'>
+              <canvas class="cir" style="width:60px; height:60px;" canvas-id="canvasArc3"></canvas> 
+              <text class='canmun3'>{{sleep3}}%</text>
+            </view>
+            <view class='topmenus'>
+              <view class='top_times'><text class='size1'>{{slp1_1}}</text>h<text class='size1'>{{slp1_2}}</text>min</view>
+              <text class='top_title'>初睡</text>
+            </view>
+          </view>
+          <view class='sleepMenu'>
+            <view class='sleep_canvas'>
+              <canvas class="cir" style="width:60px; height:60px;" canvas-id="canvasArc4"></canvas> 
+              <text class='canmun4'>{{sleep4}}%</text>
+            </view>
+            <view class='topmenus'>
+              <view class='top_times'><text class='size1'>{{slp1_1}}</text>h<text class='size1'>{{slp1_2}}</text>min</view>
+              <text class='top_title'>醒着</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='section contont'>
+    <view class='hd_title'>
+      <view class='hstitle'>
+          <view class='r_l'>
+            <image src="/image/heartrate.png" class='hd_img'></image>
+            <text class='title_1'>心率</text>
+          </view>
+          <view class='r_r'>
+           <text class='title_2'>平均心率数：</text><text class='title_3'>{{heartrate}}bpm</text>
+          </view>
+      </view>
+    </view>
+    <view class='hd_content'>
+      <view class='bg'></view>
+      <view class='r_tip'>
+        <text>高</text><text style='color:#00CB0E'>正常</text><text>低</text>
+      </view>
+      <view class='mtop'>
+        <canvas class="cir" style="width:90%; height:150px;" canvas-id="canvas2"></canvas> 
+      </view>
+    </view>
+  </view>
+  <view class='section contont'>
+    <view class='hd_title'>
+      <view class='hstitle'>
+          <view class='r_l'>
+            <image src="/image/breathrate.png" class='hd_img'></image>
+            <text class='title_1'>呼吸率</text>
+          </view>
+          <view class='r_r'>
+           <text class='title_2'>平均呼吸率：</text><text class='title_3'>{{breathrate}}bpm</text>
+          </view>
+      </view>
+    </view>
+    <view class='hd_content'>
+      <view class='bg' style='height:45px;top:58px;'></view>
+      <view class='r_tip'>
+        <text>高</text><text style='color:#00CB0E'>正常</text><text>低</text>
+      </view>
+      <view class='mtop'>
+        <canvas class="cir" style="width:90%; height:150px;" canvas-id="canvas3"></canvas> 
+      </view>
+    </view>
+  </view>
+  <view class='section contont'>
+    <view class='hd_title'>
+      <view class='hstitle'>
+          <view class='r_l'>
+            <image src="/image/help.png" class='hd_img'></image>
+            <text class='title_1'>健康建议</text>
+          </view>
+      </view>
+    </view>
+    <view class='hd_content'>
+      <text class='jianyi'>我们手机的健康数据显示，昨晚您的睡眠心率值均值为68次/分；心率变异率为104.7，处于正常范围；最高心率为70次/分，最低心率为64次/分；</text>
+      <text class='jianyi'>深度睡眠时长严重不足，需要您改善睡眠环境，调整身心状态，提升睡眠品质；好睡眠，更健康，如第一次出现异常，建议持续追踪数据趋势。</text>
+    </view>
+  </view>
+</view>

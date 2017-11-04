@@ -1,0 +1,294 @@
+/* pages/cont/cont.wxss */
+.container{
+  width: 100%;
+  height: auto;
+  overflow: hidden
+}
+.r_l{
+  float: left
+}
+.r_r{
+  float: right
+}
+.header{
+  background: #fff;
+  width: 100%;
+  height: auto;
+  padding: 48px 0px 35px 0px;
+}
+.top{
+  width: 210px;
+  height: 210px;
+  margin: 0 auto;
+  border:1px solid #f0f5f7;
+  border-radius: 50%;
+  position: relative
+}
+.canvas_tle{
+  position: absolute;
+  top:62px;
+  left:65px;
+}
+.canvas_tle text{
+  text-align: center;
+  display: block
+}
+.canvasmun{
+  font-size: 45px;
+  color: #555;
+}
+.canp{
+  font-size: 16px;
+  color: #999;
+}
+.cir{ 
+ display: inline-block; 
+}
+.top_menu{
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  margin:40px auto 0px auto;
+}
+.topmenu{
+  width:33%;
+  float: left;
+  display: block;
+  text-align: center;
+}
+.top_time{
+  color: #0592FF;
+  font-size: 19px;
+}
+.top_time .size1{
+  font-size: 24px;
+}
+.top_title{
+  color: #999;
+  display: block;
+  width: 100%;
+  font-size: 12px;
+}
+.cont_1{
+  width: 85%;
+  margin:24px auto;
+}
+.conttip{
+  display: inline-block;
+  font-size: 15px;
+  margin:0px 22px 20px 0px;
+  padding: 0px 12px;
+  border-radius:17px;
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+}
+.conttip_on{
+  background-color: #0592FF;
+}
+.conttip_def{
+  background-color:#7ac3fb;
+}
+.contont{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: #fff;
+  margin-bottom: 16px;
+}
+.hd_title{
+  width:100%;
+  height: 48px;
+  border-bottom: 1px solid #CFCFCF;
+}
+.hstitle{
+  width: 90%;
+  margin:0 auto;
+  height: 48px;
+  line-height: 48px;
+}
+.hd_img{
+  width: 20px;
+  height: 18px;
+  float: left;
+  margin: 16px 5px 0px 0px;
+}
+.title_1{
+  color: #555;
+  font-size: 16px;
+}
+.title_2{
+  color: #999;
+  font-size: 12px;
+}
+.title_3{
+  color: #0592FF;
+  font-size: 12px;
+}
+.hd_content{
+  width:100%;
+  height: auto;
+  position: relative;
+}
+.bg{
+  width: 100%;
+  position: absolute;
+  height: 55px;
+  top:44px;
+  left: 0px;
+  right: 0px;
+  background: #F9FCFF;
+}
+.jianyi{
+  width: 90%;
+  margin: 17px auto;
+  font-size: 15px;
+  color: #555;
+  display: block;
+  margin-bottom: 20px;
+}
+.mtop{
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+.r_tip{
+  position: absolute;
+  width: 10%;
+  right: 0px;
+  height: 150px;
+}
+.r_tip text{
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #999;
+  height: 50px;
+  font-size: 12px;
+  line-height: 50px;
+}
+.sleepCont{
+  width: 90%;
+  margin:32px auto;
+}
+.sleep{
+  width:100%;
+  height: 130px;
+  overflow: hidden;
+  margin: 15px auto 0px auto;
+}
+.sleep .bgs{
+  float: left;
+  height: 130px;
+  position: relative
+}
+.sleep .bgs view{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+.sleep_cont{
+  width: 100%;
+  height: auto;
+  overflow: hidden
+}
+.sleepMenu{
+  width:25%;
+  float: left;
+  height: auto;
+  overflow: hidden;
+}
+.top_times{
+  color: #555;
+  font-size: 14px;
+}
+.top_times .size1{
+  font-size: 18px;
+}
+.sleep_canvas{
+  position: relative;
+  width: 60px;
+  margin:0 auto;
+}
+.topmenus{
+  width: 100%;
+  text-align: center;
+}
+.topmenus .top_title{
+  margin-top: 5px;
+}
+.sleep_canvas text{
+  font-size:16px;
+  position:absolute;
+  top:19px;
+  left:14px;
+}
+.canmun1{
+  color: #0592FF;
+}
+.canmun2{
+  color: #00CBBC;
+}
+.canmun3{
+  color: #BCDF9D;
+}
+.canmun4{
+  color: #FB8E95;
+}
+.bg1{
+  height: 31px;
+  background-color: #0592FF;
+}
+.bg2{
+  height: 61px;
+  background-color: #00CBBC;
+}
+.bg3{
+  height: 76px;
+  background-color: #BCDF9D;
+}
+.bg4{
+  height: 92px;
+  background-color: #FB8E95;
+}
+.bg5{
+  height: 114px;
+  border-left:1px dashed #FF0000;
+}
+.splimg{
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top:1px;
+  left: -8px;
+}
+.times{
+  width: 100%;
+  height: 20px;
+  border-top:1px solid #CFCFCF;
+  margin:20px auto 10px auto;
+  position: relative
+}
+.timeimg{
+  width: 20px;
+  height: 20px;
+}
+.timeMenu{
+  position: absolute;
+  height: 20px;
+  width: auto;
+  top:-12px;
+  padding: 0px 10px;
+  line-height: 20px;
+  background-color: #fff;
+  
+}
+.timeMenu text{
+  font-size: 12px;
+  color: #666;
+  padding: 0px 3px;
+  line-height: 20px;
+  display: inline-block;
+}

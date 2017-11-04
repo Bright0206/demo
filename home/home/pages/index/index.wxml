@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+   <image class="image_frame" src="/image/banner.png" mode="aspectFill"></image>  
+  </view>
+  <view class="usermotto">
+    <view class="section menu">
+      <view class="section__title">机构：</view>
+       <!--<view class='imgtp'><image class="incos" src="{{img1}}" ></image></view>-->
+      <picker bindchange="bindPickerChange" value="{{index}}"   range="{{arrays}}"  range-key="clientName" class='sels'>
+        <view class="picker">
+            {{arrays[index].clientName}}
+        </view>
+      </picker>
+
+      <text class='tips'>{{tips}}</text>
+    </view>
+    <view class="section menu">
+      <view class="section__title">床位号：</view>
+      <view class='imgtp imgtps' bindtap="close"><image class="incos1" src="{{img2}}" ></image></view>
+      <input placeholder="" type='number' class='inps' value='{{bed}}' bindinput="bedChange"/>
+      <text class='tips'>{{tips1}}</text>
+    </view>
+    <view class="section menu">
+      <view class="section__title">姓名：</view>
+      <view class='imgtp imgtps' bindtap="close1"><image class="incos1" src="{{img2}}" ></image></view>
+      <input placeholder="" type='text' class='inps' value='{{names}}' bindinput="nameChange"/>
+      <text class='tips'>{{tips2}}</text>
+    </view>
+    <view class="section menu">
+      <view class="section__title">时间：</view>
+       <view class='imgtp'><image class="incos1" src="{{img3}}" ></image></view>
+      <picker mode="date" value="{{date}}" bindchange="bindDateChange" class='sels'>
+          <view class="picker" > {{date}} </view>
+        </picker>
+      <text class='tips'>{{tips3}}</text>
+    </view>
+  </view>
+  <button type="primary" size="{{primarySize}}"  bindtap="primary" hover-class="sub">查询报告</button>
+</view>

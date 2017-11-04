@@ -1,0 +1,82 @@
+.container{
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.userinfo{
+  width: 100%;
+  height: 130px;
+  overflow: hidden
+}
+.image_frame{
+  width: 100%;
+  height:130px;
+}
+.usermotto{
+  width:100;
+  margin:0px auto;
+  background-color: #fff;
+  padding: 15px 5% 5px 5%;
+}
+.menu{
+  width: 100%;
+  height: 78px;
+  margin-bottom:10px;
+  clear: both;
+  position: relative;
+}
+.imgtp{
+  width: 35px;
+  height: 35px;
+  right: 1px;
+  top:26px;
+  position: absolute;
+  z-index: 100;
+  text-align: center
+}
+.imgtps{
+  display:none;
+}
+.incos{
+  width:12px;
+  height:8px;
+  margin-top:13px;
+}
+.incos1{
+  width: 20px;
+  height: 20px;
+ margin-top:7px;
+}
+.section__title{
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 6px
+}
+.inps,.sels{
+  width:auto;
+  height: 35px;
+  border:#ccc solid 1px;
+  border-radius: 5px;
+  margin:0 auto;
+  font-size: 16px;
+  color: #555;
+  padding-left: 10px;
+  line-height: 35px
+}
+.inps:focus,.sels:focus{
+  border:1px solid red;
+}
+.tips{
+  font-size: 12px;
+  color: #f00;
+  margin-top: 2px;
+  display: none
+}
+button[type="primary"]{
+  background-color: #0592FF;
+  width: 90%;
+  margin-top:24px;
+}
+.button-hover {
+   background-color: #0592FF;
+}
